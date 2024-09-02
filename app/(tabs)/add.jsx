@@ -5,9 +5,9 @@ import { StatusBar } from 'expo-status-bar'
 
 const Add = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView className="bg-primary-100 h-full">
       <Text>Add</Text>
-      <StatusBar/>
+      <StatusBar backgroundColor="#FFF6E5"  />  
     </SafeAreaView>
   )
 }
