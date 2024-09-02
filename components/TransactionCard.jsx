@@ -17,7 +17,6 @@ const TransactionCard = ({type, amount, category, description, time}) => {
             <View className="flex-row items-center justify-between w-full">
                 <Text className="text-gray font-bold text-base" >{description}</Text>
                 <Text className="text-gray font-bold text-base" >{time}</Text>
-
             </View>
         </View>
     )

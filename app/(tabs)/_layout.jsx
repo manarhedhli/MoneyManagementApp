@@ -23,7 +23,7 @@ const TabIcon= ({icon, color, name, focused})=>{
 const TabAddIcon= ({icon, color})=>{
     return(                  
         <View 
-            className="mb-10 w-[55px] h-[60px] rounded-full p-3 items-center justify-center border-gray-500 border-4 "
+            className="mb-10 w-[55px] h-[60px] rounded-full p-3 items-center justify-center border-primary-100 border-4w "
             style={{backgroundColor: color}}
         >
             <Image
@@ -75,8 +75,7 @@ const TabsLayout = () => {
                 title: "Transactions",
                 headerTitleAlign: 'center',
                 headerStyle: { 
-                    backgroundColor: '#FFF6E5' ,
-                    fontWeight: 'bold'
+                    backgroundColor: '#FFF6E5' ,                    
                 },        
                 tabBarIcon: ({color, focused})=>(
                     <TabIcon
@@ -90,8 +89,12 @@ const TabsLayout = () => {
         />
         <Tabs.Screen
             name='add'
-            options={{                
-                headerShown: false,
+            options={{ 
+                title: "Add Transaction",               
+                headerTitleAlign: 'center',
+                headerStyle: { 
+                    backgroundColor: '#FFF6E5' ,                    
+                }, 
                 tabBarIcon: ({color, focused})=>(
                     <TabAddIcon
                         icon={icons.add} 
@@ -103,7 +106,11 @@ const TabsLayout = () => {
         <Tabs.Screen
             name='statistics'
             options={{                
-                headerShown: false,
+                title: "Financial Report",               
+                headerTitleAlign: 'center',
+                headerStyle: { 
+                    backgroundColor: '#FFF6E5' ,                    
+                }, 
                 tabBarIcon: ({color, focused})=>(
                     <TabIcon
                         icon={icons.chart}
