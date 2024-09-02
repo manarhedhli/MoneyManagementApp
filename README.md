@@ -1,4 +1,4 @@
-# Welcome to Your MoneyManagement App 👋
+# Welcome to MoneyManagement App 👋
 
 ## Description 
 This is a React Native app based on a publicly available Figma design.
