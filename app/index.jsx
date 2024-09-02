@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {images} from "../constants"
+import { Link } from "expo-router";
 
 
 
@@ -17,13 +18,16 @@ export default function App(){
                 <View className="items-center space-y-10" >
                     <Text className="text-5xl font-bold" >Simple solution for your budget.</Text>
                     <Text className="text-4xl" >Counter and distribute the income correctly...</Text>
-                    <TouchableOpacity
-                        className="w-[230] h-[50] bg-black items-center justify-center rounded-lg "
-                        
-                    >
-                        <Text className="color-white text-2xl "> Continue </Text>
-                    </TouchableOpacity>
-                
+                    <View className="w-[230] h-[50] bg-black rounded-lg items-center justify-center " >
+                        <Link
+                            // href="/sign-in" 
+                            href="/home" 
+                                                   
+                        >
+                            <Text className="color-white text-2xl "> Continue </Text>
+                        </Link>
+                    </View>
+                                    
                 </View> 
             </View>                                           
             <StatusBar />
