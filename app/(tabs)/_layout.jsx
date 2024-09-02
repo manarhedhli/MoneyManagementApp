@@ -71,8 +71,13 @@ const TabsLayout = () => {
         />
         <Tabs.Screen
             name='transactions'
-            options={{                
-                headerShown: false,
+            options={{     
+                title: "Transactions",
+                headerTitleAlign: 'center',
+                headerStyle: { 
+                    backgroundColor: '#FFF6E5' ,
+                    fontWeight: 'bold'
+                },        
                 tabBarIcon: ({color, focused})=>(
                     <TabIcon
                         icon={icons.transaction}
