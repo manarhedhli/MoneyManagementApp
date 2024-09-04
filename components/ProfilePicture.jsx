@@ -1,17 +1,16 @@
-import { Image, Text, View } from 'react-native'
+import { Image, View } from 'react-native'
 import React from 'react'
 
-const ProfilePicture = ({picture, name }) => {
+const ProfilePicture = ({picture }) => {
     return (
-        <View className="flex-row items-center" >
+        <View className="w-full h-full bg-red rounded-full border-2 border-violet overflow-hidden">
             <Image
                 source={picture}
-                resizeMode="contain"
-                className="mx-2" 
-
+                resizeMode="cover"
+                className="w-full h-full" 
             />
-            <Text className="font-bold text-base">{name}</Text>
         </View>
+            
     )
 }
 

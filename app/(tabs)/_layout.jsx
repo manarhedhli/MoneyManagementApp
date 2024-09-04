@@ -4,7 +4,7 @@ import {icons} from '../../constants'
 import { Image, Text, View } from 'react-native'
 
 
-const TabIcon= ({icon, color, name, focused})=>{
+const TabIcon= ({icon, color, name})=>{
     return(
         <View className="items-center justify-center gap-2">
             <Image
@@ -23,7 +23,7 @@ const TabIcon= ({icon, color, name, focused})=>{
 const TabAddIcon= ({icon, color})=>{
     return(                  
         <View 
-            className="mb-10 w-[55px] h-[60px] rounded-full p-3 items-center justify-center border-primary-100 border-4w "
+            className="mb-10 w-[55px] h-[60px] rounded-full p-3 items-center justify-center border-primary-100 border-4 "
             style={{backgroundColor: color}}
         >
             <Image

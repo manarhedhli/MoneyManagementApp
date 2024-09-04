@@ -42,10 +42,11 @@ const Home = () => {
       <View className="bg-primary-100 h-1/2 rounded-b-3xl justify-between ">
         <View className="flex-row items-center h-[80] justify-between border-b-2 p-3" >
           <Text className="font-bold text-lg w-1/3" > MONDAY 2 SEPTEMBER </Text>
-          <ProfilePicture
-            picture={images.picture}
-            name="VISHNU"
-          />        
+          <View className="w-[50] h-[50] items-center justify-center">
+            <ProfilePicture
+              picture={images.picture}              
+            />  
+          </View>      
         </View>
         <View>
           <Text className="text-gray text-center mb-3" >Account Balance</Text> 

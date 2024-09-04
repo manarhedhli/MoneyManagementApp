@@ -10,7 +10,8 @@ import upload from "../assets/icons/upload.png"
 import logout from "../assets/icons/logout.png"
 import income from "../assets/icons/income.png"
 import expense from "../assets/icons/expense.png"
-
+import edit from "../assets/icons/edit.png"
+import settings from "../assets/icons/settings.png"
 
 
 export default {
@@ -25,5 +26,7 @@ export default {
     upload,
     logout,
     income,
-    expense
+    expense,
+    edit,
+    settings
 }
